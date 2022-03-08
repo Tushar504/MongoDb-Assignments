@@ -1,0 +1,213 @@
+> db.data.find({movie_name:{$eq:"Tracks"}},{movie_name:1,production_year:1})
+{ "_id" : ObjectId("62275cb2a7a329413cede27f"), "movie_name" : "Tracks", "production_year" : 1999 }
+> db.data.find({movie_name:{$ne:"Tracks"}},{movie_name:1,production_year:1})
+{ "_id" : ObjectId("62275cb2a7a329413cede280"), "movie_name" : "Ritz, The", "production_year" : 2020 }
+{ "_id" : ObjectId("62275cb2a7a329413cede281"), "movie_name" : "Chocolat", "production_year" : 1994 }
+{ "_id" : ObjectId("62275cb2a7a329413cede282"), "movie_name" : "Gnomeo & Juliet", "production_year" : 1992 }
+{ "_id" : ObjectId("62275cb2a7a329413cede283"), "movie_name" : "World War II: When Lions Roared", "production_year" : 1993 }
+{ "_id" : ObjectId("62275cb2a7a329413cede284"), "movie_name" : "The Last Wagon", "production_year" : 2000 }
+{ "_id" : ObjectId("62275cb2a7a329413cede285"), "movie_name" : "Beats Rhymes & Life: The Travels of a Tribe Called Quest", "production_year" : 2001 }
+{ "_id" : ObjectId("62275cb2a7a329413cede286"), "movie_name" : "Hercules and the Circle of Fire", "production_year" : 2012 }
+{ "_id" : ObjectId("62275cb2a7a329413cede287"), "movie_name" : "Special Relationship, The", "production_year" : 2018 }
+{ "_id" : ObjectId("62275cb2a7a329413cede288"), "movie_name" : "Dragon Lord (a.k.a. Dragon Strike) (Long Xiao Ye)", "production_year" : 2002 }
+{ "_id" : ObjectId("62275cb2a7a329413cede289"), "movie_name" : "The Pee-Wee Herman Show on Broadway", "production_year" : 2009 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28a"), "movie_name" : "Eternal Sunshine of the Spotless Mind", "production_year" : 2007 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28b"), "movie_name" : "Emmett's Mark", "production_year" : 2016 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28c"), "movie_name" : "Lovers, The (Les Amants)", "production_year" : 1996 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28d"), "movie_name" : "Cockpit", "production_year" : 1990 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28e"), "movie_name" : "Women in Trouble", "production_year" : 2013 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28f"), "movie_name" : "Serbian Film, A (Srpski film)", "production_year" : 2002 }
+{ "_id" : ObjectId("62275cb2a7a329413cede290"), "movie_name" : "Life Aquatic with Steve Zissou, The", "production_year" : 2020 }
+{ "_id" : ObjectId("62275cb2a7a329413cede291"), "movie_name" : "Acla, The Descent into Floristella (La discesa di Aclà a Floristella)", "production_year" : 2019 }
+{ "_id" : ObjectId("62275cb2a7a329413cede292"), "movie_name" : "Temple Grandin", "production_year" : 2020 }
+{ "_id" : ObjectId("62275cb2a7a329413cede293"), "movie_name" : "Danse: The Paris Opera Ballet, La (La Danse - Le ballet de l'Opéra de Paris)", "production_year" : 2014 }
+Type "it" for more
+> db.data.find({budget:{$gte:15000}},{movie_name:1,production_year:1})
+{ "_id" : ObjectId("62275cb2a7a329413cede280"), "movie_name" : "Ritz, The", "production_year" : 2020 }
+{ "_id" : ObjectId("62275cb2a7a329413cede286"), "movie_name" : "Hercules and the Circle of Fire", "production_year" : 2012 }
+{ "_id" : ObjectId("62275cb2a7a329413cede289"), "movie_name" : "The Pee-Wee Herman Show on Broadway", "production_year" : 2009 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28a"), "movie_name" : "Eternal Sunshine of the Spotless Mind", "production_year" : 2007 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28b"), "movie_name" : "Emmett's Mark", "production_year" : 2016 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28c"), "movie_name" : "Lovers, The (Les Amants)", "production_year" : 1996 }
+{ "_id" : ObjectId("62275cb2a7a329413cede291"), "movie_name" : "Acla, The Descent into Floristella (La discesa di Aclà a Floristella)", "production_year" : 2019 }
+{ "_id" : ObjectId("62275cb2a7a329413cede293"), "movie_name" : "Danse: The Paris Opera Ballet, La (La Danse - Le ballet de l'Opéra de Paris)", "production_year" : 2014 }
+{ "_id" : ObjectId("62275cb2a7a329413cede294"), "movie_name" : "Frequency", "production_year" : 2019 }
+{ "_id" : ObjectId("62275cb2a7a329413cede296"), "movie_name" : "Root of All Evil?", "production_year" : 2012 }
+{ "_id" : ObjectId("62275cb2a7a329413cede297"), "movie_name" : "Bright Leaves", "production_year" : 2019 }
+{ "_id" : ObjectId("62275cb2a7a329413cede298"), "movie_name" : "Breaking and Entering", "production_year" : 2019 }
+{ "_id" : ObjectId("62275cb2a7a329413cede299"), "movie_name" : "Takva: A Man's Fear of God", "production_year" : 2006 }
+{ "_id" : ObjectId("62275cb2a7a329413cede29c"), "movie_name" : "East is East", "production_year" : 2015 }
+{ "_id" : ObjectId("62275cb2a7a329413cede29d"), "movie_name" : "Red Dog", "production_year" : 2004 }
+{ "_id" : ObjectId("62275cb2a7a329413cede29f"), "movie_name" : "Mommy", "production_year" : 2020 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2a0"), "movie_name" : "Bulli: Cooking in Progress, El", "production_year" : 2018 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2a4"), "movie_name" : "Apparition, The", "production_year" : 2018 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2a8"), "movie_name" : "Heat", "production_year" : 2019 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2aa"), "movie_name" : "2010: Moby Dick", "production_year" : 1992 }
+Type "it" for more
+> db.data.find({budget:{$lte:11000}},{movie_name:1,production_year:1})
+{ "_id" : ObjectId("62275cb2a7a329413cede285"), "movie_name" : "Beats Rhymes & Life: The Travels of a Tribe Called Quest", "production_year" : 2001 }
+{ "_id" : ObjectId("62275cb2a7a329413cede287"), "movie_name" : "Special Relationship, The", "production_year" : 2018 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28e"), "movie_name" : "Women in Trouble", "production_year" : 2013 }
+{ "_id" : ObjectId("62275cb2a7a329413cede290"), "movie_name" : "Life Aquatic with Steve Zissou, The", "production_year" : 2020 }
+{ "_id" : ObjectId("62275cb2a7a329413cede295"), "movie_name" : "Teen Witch", "production_year" : 1990 }
+{ "_id" : ObjectId("62275cb2a7a329413cede29a"), "movie_name" : "Punk's Not Dead", "production_year" : 2012 }
+{ "_id" : ObjectId("62275cb2a7a329413cede29b"), "movie_name" : "Peach Thief, The (Kradetzat na praskovi)", "production_year" : 2010 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2a2"), "movie_name" : "Big Green, The", "production_year" : 1998 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2a3"), "movie_name" : "The Very Thought of You", "production_year" : 2002 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2a9"), "movie_name" : "Seconds", "production_year" : 1998 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2ac"), "movie_name" : "Zona Zamfirova", "production_year" : 2005 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2ad"), "movie_name" : "Once Upon a Time in Anatolia (Bir zamanlar Anadolu'da)", "production_year" : 1998 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2b1"), "movie_name" : "Bachelorette", "production_year" : 2008 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2bc"), "movie_name" : "Le crocodile du Botswanga", "production_year" : 2005 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2c3"), "movie_name" : "Prince of Foxes", "production_year" : 2012 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2c8"), "movie_name" : "Brothers at War", "production_year" : 2001 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2db"), "movie_name" : "Innocents, The", "production_year" : 2011 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2df"), "movie_name" : "About a Boy", "production_year" : 2000 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2e4"), "movie_name" : "There Was a Crooked Man...", "production_year" : 1991 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2f0"), "movie_name" : "Fanatics (Kulman pojat)", "production_year" : 2020 }
+Type "it" for more
+> db.data.find({$and:[{"production_year":{$gt:2000}},{"budget":{$gt:10000}}]},{movie_name:1,production_year:1})
+{ "_id" : ObjectId("62275cb2a7a329413cede280"), "movie_name" : "Ritz, The", "production_year" : 2020 }
+{ "_id" : ObjectId("62275cb2a7a329413cede286"), "movie_name" : "Hercules and the Circle of Fire", "production_year" : 2012 }
+{ "_id" : ObjectId("62275cb2a7a329413cede288"), "movie_name" : "Dragon Lord (a.k.a. Dragon Strike) (Long Xiao Ye)", "production_year" : 2002 }
+{ "_id" : ObjectId("62275cb2a7a329413cede289"), "movie_name" : "The Pee-Wee Herman Show on Broadway", "production_year" : 2009 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28a"), "movie_name" : "Eternal Sunshine of the Spotless Mind", "production_year" : 2007 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28b"), "movie_name" : "Emmett's Mark", "production_year" : 2016 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28e"), "movie_name" : "Women in Trouble", "production_year" : 2013 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28f"), "movie_name" : "Serbian Film, A (Srpski film)", "production_year" : 2002 }
+{ "_id" : ObjectId("62275cb2a7a329413cede290"), "movie_name" : "Life Aquatic with Steve Zissou, The", "production_year" : 2020 }
+{ "_id" : ObjectId("62275cb2a7a329413cede291"), "movie_name" : "Acla, The Descent into Floristella (La discesa di Aclà a Floristella)", "production_year" : 2019 }
+{ "_id" : ObjectId("62275cb2a7a329413cede292"), "movie_name" : "Temple Grandin", "production_year" : 2020 }
+{ "_id" : ObjectId("62275cb2a7a329413cede293"), "movie_name" : "Danse: The Paris Opera Ballet, La (La Danse - Le ballet de l'Opéra de Paris)", "production_year" : 2014 }
+{ "_id" : ObjectId("62275cb2a7a329413cede294"), "movie_name" : "Frequency", "production_year" : 2019 }
+{ "_id" : ObjectId("62275cb2a7a329413cede296"), "movie_name" : "Root of All Evil?", "production_year" : 2012 }
+{ "_id" : ObjectId("62275cb2a7a329413cede297"), "movie_name" : "Bright Leaves", "production_year" : 2019 }
+{ "_id" : ObjectId("62275cb2a7a329413cede298"), "movie_name" : "Breaking and Entering", "production_year" : 2019 }
+{ "_id" : ObjectId("62275cb2a7a329413cede299"), "movie_name" : "Takva: A Man's Fear of God", "production_year" : 2006 }
+{ "_id" : ObjectId("62275cb2a7a329413cede29a"), "movie_name" : "Punk's Not Dead", "production_year" : 2012 }
+{ "_id" : ObjectId("62275cb2a7a329413cede29c"), "movie_name" : "East is East", "production_year" : 2015 }
+{ "_id" : ObjectId("62275cb2a7a329413cede29d"), "movie_name" : "Red Dog", "production_year" : 2004 }
+Type "it" for more
+> db.data.find({$or:[{production_year:{$gt:2000}},{budget:{$gt:10000}}]},{movie_name:1,production_year:1})db.data.find({$or:[{production_year:{$gt:2000}},{budget:{$gt:10000}}]},{movie_name:1,production_year:1})
+{ "_id" : ObjectId("62275cb2a7a329413cede27f"), "movie_name" : "Tracks", "production_year" : 1999 }
+{ "_id" : ObjectId("62275cb2a7a329413cede280"), "movie_name" : "Ritz, The", "production_year" : 2020 }
+{ "_id" : ObjectId("62275cb2a7a329413cede281"), "movie_name" : "Chocolat", "production_year" : 1994 }
+{ "_id" : ObjectId("62275cb2a7a329413cede282"), "movie_name" : "Gnomeo & Juliet", "production_year" : 1992 }
+{ "_id" : ObjectId("62275cb2a7a329413cede283"), "movie_name" : "World War II: When Lions Roared", "production_year" : 1993 }
+{ "_id" : ObjectId("62275cb2a7a329413cede284"), "movie_name" : "The Last Wagon", "production_year" : 2000 }
+{ "_id" : ObjectId("62275cb2a7a329413cede285"), "movie_name" : "Beats Rhymes & Life: The Travels of a Tribe Called Quest", "production_year" : 2001 }
+{ "_id" : ObjectId("62275cb2a7a329413cede286"), "movie_name" : "Hercules and the Circle of Fire", "production_year" : 2012 }
+{ "_id" : ObjectId("62275cb2a7a329413cede287"), "movie_name" : "Special Relationship, The", "production_year" : 2018 }
+{ "_id" : ObjectId("62275cb2a7a329413cede288"), "movie_name" : "Dragon Lord (a.k.a. Dragon Strike) (Long Xiao Ye)", "production_year" : 2002 }
+{ "_id" : ObjectId("62275cb2a7a329413cede289"), "movie_name" : "The Pee-Wee Herman Show on Broadway", "production_year" : 2009 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28a"), "movie_name" : "Eternal Sunshine of the Spotless Mind", "production_year" : 2007 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28b"), "movie_name" : "Emmett's Mark", "production_year" : 2016 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28c"), "movie_name" : "Lovers, The (Les Amants)", "production_year" : 1996 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28d"), "movie_name" : "Cockpit", "production_year" : 1990 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28e"), "movie_name" : "Women in Trouble", "production_year" : 2013 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28f"), "movie_name" : "Serbian Film, A (Srpski film)", "production_year" : 2002 }
+{ "_id" : ObjectId("62275cb2a7a329413cede290"), "movie_name" : "Life Aquatic with Steve Zissou, The", "production_year" : 2020 }
+{ "_id" : ObjectId("62275cb2a7a329413cede291"), "movie_name" : "Acla, The Descent into Floristella (La discesa di Aclà a Floristella)", "production_year" : 2019 }
+{ "_id" : ObjectId("62275cb2a7a329413cede292"), "movie_name" : "Temple Grandin", "production_year" : 2020 }
+Type "it" for more
+> db.data.find({$nor:[{production_year:{$gt:2000}},{budget:{$gt:10000}}]},{movie_name:1,production_year:1})
+{ "_id" : ObjectId("62275cb2a7a329413cede2f4"), "movie_name" : "Idiot, The (Hakuchi)", "production_year" : 1993 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2f6"), "movie_name" : "Brøken, The (a.k.a. Broken, The)", "production_year" : 1997 }
+{ "_id" : ObjectId("62275cb2a7a329413cede35d"), "movie_name" : "Puppet Master vs. Demonic Toys (Puppet Master 9)", "production_year" : 1995 }
+{ "_id" : ObjectId("62275cb2a7a329413cede36d"), "movie_name" : "The Red Inn", "production_year" : 1999 }
+{ "_id" : ObjectId("62275cb2a7a329413cede394"), "movie_name" : "Notebook, The (A nagy füzet)", "production_year" : 1999 }
+{ "_id" : ObjectId("62275cb2a7a329413cede3b1"), "movie_name" : "Vampires", "production_year" : 1995 }
+{ "_id" : ObjectId("62275cb2a7a329413cede41b"), "movie_name" : "LOL", "production_year" : 1990 }
+> db.data.find({$or:[{production_year:{$ne:2000}},{budget:{$ne:10000}}]},{movie_name:1,production_year:1})
+{ "_id" : ObjectId("62275cb2a7a329413cede27f"), "movie_name" : "Tracks", "production_year" : 1999 }
+{ "_id" : ObjectId("62275cb2a7a329413cede280"), "movie_name" : "Ritz, The", "production_year" : 2020 }
+{ "_id" : ObjectId("62275cb2a7a329413cede281"), "movie_name" : "Chocolat", "production_year" : 1994 }
+{ "_id" : ObjectId("62275cb2a7a329413cede282"), "movie_name" : "Gnomeo & Juliet", "production_year" : 1992 }
+{ "_id" : ObjectId("62275cb2a7a329413cede283"), "movie_name" : "World War II: When Lions Roared", "production_year" : 1993 }
+{ "_id" : ObjectId("62275cb2a7a329413cede284"), "movie_name" : "The Last Wagon", "production_year" : 2000 }
+{ "_id" : ObjectId("62275cb2a7a329413cede285"), "movie_name" : "Beats Rhymes & Life: The Travels of a Tribe Called Quest", "production_year" : 2001 }
+{ "_id" : ObjectId("62275cb2a7a329413cede286"), "movie_name" : "Hercules and the Circle of Fire", "production_year" : 2012 }
+{ "_id" : ObjectId("62275cb2a7a329413cede287"), "movie_name" : "Special Relationship, The", "production_year" : 2018 }
+{ "_id" : ObjectId("62275cb2a7a329413cede288"), "movie_name" : "Dragon Lord (a.k.a. Dragon Strike) (Long Xiao Ye)", "production_year" : 2002 }
+{ "_id" : ObjectId("62275cb2a7a329413cede289"), "movie_name" : "The Pee-Wee Herman Show on Broadway", "production_year" : 2009 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28a"), "movie_name" : "Eternal Sunshine of the Spotless Mind", "production_year" : 2007 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28b"), "movie_name" : "Emmett's Mark", "production_year" : 2016 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28c"), "movie_name" : "Lovers, The (Les Amants)", "production_year" : 1996 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28d"), "movie_name" : "Cockpit", "production_year" : 1990 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28e"), "movie_name" : "Women in Trouble", "production_year" : 2013 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28f"), "movie_name" : "Serbian Film, A (Srpski film)", "production_year" : 2002 }
+{ "_id" : ObjectId("62275cb2a7a329413cede290"), "movie_name" : "Life Aquatic with Steve Zissou, The", "production_year" : 2020 }
+{ "_id" : ObjectId("62275cb2a7a329413cede291"), "movie_name" : "Acla, The Descent into Floristella (La discesa di Aclà a Floristella)", "production_year" : 2019 }
+{ "_id" : ObjectId("62275cb2a7a329413cede292"), "movie_name" : "Temple Grandin", "production_year" : 2020 }
+Type "it" for more
+> db.data.find({$and:[{production_year:{$gt:2000}},{production_year:{$lt:2010}}]},{movie_name:1,production_year:1})
+{ "_id" : ObjectId("62275cb2a7a329413cede285"), "movie_name" : "Beats Rhymes & Life: The Travels of a Tribe Called Quest", "production_year" : 2001 }
+{ "_id" : ObjectId("62275cb2a7a329413cede288"), "movie_name" : "Dragon Lord (a.k.a. Dragon Strike) (Long Xiao Ye)", "production_year" : 2002 }
+{ "_id" : ObjectId("62275cb2a7a329413cede289"), "movie_name" : "The Pee-Wee Herman Show on Broadway", "production_year" : 2009 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28a"), "movie_name" : "Eternal Sunshine of the Spotless Mind", "production_year" : 2007 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28f"), "movie_name" : "Serbian Film, A (Srpski film)", "production_year" : 2002 }
+{ "_id" : ObjectId("62275cb2a7a329413cede299"), "movie_name" : "Takva: A Man's Fear of God", "production_year" : 2006 }
+{ "_id" : ObjectId("62275cb2a7a329413cede29d"), "movie_name" : "Red Dog", "production_year" : 2004 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2a1"), "movie_name" : "Stepdaughter, The", "production_year" : 2008 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2a3"), "movie_name" : "The Very Thought of You", "production_year" : 2002 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2a5"), "movie_name" : "They Won't Forget", "production_year" : 2006 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2a6"), "movie_name" : "In Eagle Shadow Fist (Ding tian li di) (Fist of Anger)", "production_year" : 2005 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2a7"), "movie_name" : "Time (Shi gan)", "production_year" : 2005 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2ac"), "movie_name" : "Zona Zamfirova", "production_year" : 2005 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2af"), "movie_name" : "Punk Singer, The", "production_year" : 2006 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2b1"), "movie_name" : "Bachelorette", "production_year" : 2008 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2b5"), "movie_name" : "Wizard of Oz, The", "production_year" : 2006 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2b7"), "movie_name" : "Adjust Your Tracking", "production_year" : 2006 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2bc"), "movie_name" : "Le crocodile du Botswanga", "production_year" : 2005 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2bf"), "movie_name" : "Wilder Napalm", "production_year" : 2006 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2c7"), "movie_name" : "Peas at 5:30 (Erbsen auf halb 6)", "production_year" : 2008 }
+Type "it" for more
+> db.data.find({}).sort({production_year:-1,movies_name:1})
+{ "_id" : ObjectId("62275cb2a7a329413cede280"), "id" : 2, "movie_name" : "Ritz, The", "movie_genre" : "Comedy", "production_year" : 2020, "budget" : 17484 }
+{ "_id" : ObjectId("62275cb2a7a329413cede290"), "id" : 18, "movie_name" : "Life Aquatic with Steve Zissou, The", "movie_genre" : "Adventure|Comedy|Fantasy", "production_year" : 2020, "budget" : 10714 }
+{ "_id" : ObjectId("62275cb2a7a329413cede292"), "id" : 20, "movie_name" : "Temple Grandin", "movie_genre" : "Drama", "production_year" : 2020, "budget" : 12887 }
+{ "_id" : ObjectId("62275cb2a7a329413cede29f"), "id" : 33, "movie_name" : "Mommy", "movie_genre" : "Drama", "production_year" : 2020, "budget" : 19427 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2cd"), "id" : 79, "movie_name" : "Kit Kittredge: An American Girl", "movie_genre" : "Children|Comedy|Drama|Mystery", "production_year" : 2020, "budget" : 19884 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2ce"), "id" : 80, "movie_name" : "MURDER and murder", "movie_genre" : "Crime|Drama|Mystery", "production_year" : 2020, "budget" : 16768 }
+{ "_id" : ObjectId("62275cb2a7a329413cede2f0"), "id" : 114, "movie_name" : "Fanatics (Kulman pojat)", "movie_genre" : "Comedy", "production_year" : 2020, "budget" : 10962 }
+{ "_id" : ObjectId("62275cb2a7a329413cede308"), "id" : 138, "movie_name" : "Life After Tomorrow", "movie_genre" : "Documentary", "production_year" : 2020, "budget" : 16005 }
+{ "_id" : ObjectId("62275cb2a7a329413cede31b"), "id" : 157, "movie_name" : "Elizabeth", "movie_genre" : "Drama", "production_year" : 2020, "budget" : 15217 }
+{ "_id" : ObjectId("62275cb2a7a329413cede333"), "id" : 181, "movie_name" : "Elevator ", "movie_genre" : "Thriller", "production_year" : 2020, "budget" : 19629 }
+{ "_id" : ObjectId("62275cb2a7a329413cede373"), "id" : 245, "movie_name" : "Vivre sa vie: Film en douze tableaux (My Life to Live)", "movie_genre" : "Drama", "production_year" : 2020, "budget" : 10041 }
+{ "_id" : ObjectId("62275cb2a7a329413cede37d"), "id" : 255, "movie_name" : "Double Team", "movie_genre" : "Action", "production_year" : 2020, "budget" : 14032 }
+{ "_id" : ObjectId("62275cb2a7a329413cede396"), "id" : 280, "movie_name" : "I Like It Like That", "movie_genre" : "Comedy|Drama|Romance", "production_year" : 2020, "budget" : 11877 }
+{ "_id" : ObjectId("62275cb2a7a329413cede39f"), "id" : 289, "movie_name" : "Ping Pong Playa", "movie_genre" : "Comedy", "production_year" : 2020, "budget" : 18528 }
+{ "_id" : ObjectId("62275cb2a7a329413cede3a3"), "id" : 293, "movie_name" : "Doomsday", "movie_genre" : "Action|Drama|Sci-Fi|Thriller", "production_year" : 2020, "budget" : 18442 }
+{ "_id" : ObjectId("62275cb2a7a329413cede3b3"), "id" : 309, "movie_name" : "Pieces (Mil gritos tiene la noche) (One Thousand Cries Has the Night)", "movie_genre" : "Horror|Mystery|Thriller", "production_year" : 2020, "budget" : 11138 }
+{ "_id" : ObjectId("62275cb2a7a329413cede3d6"), "id" : 344, "movie_name" : "Seeking Justice", "movie_genre" : "Action|Drama|Thriller", "production_year" : 2020, "budget" : 11951 }
+{ "_id" : ObjectId("62275cb2a7a329413cede43f"), "id" : 449, "movie_name" : "Disorderly Orderly, The", "movie_genre" : "Comedy|Romance", "production_year" : 2020, "budget" : 12958 }
+{ "_id" : ObjectId("62275cb2a7a329413cede440"), "id" : 450, "movie_name" : "That's The Way I Like It (a.k.a. Forever Fever)", "movie_genre" : "Comedy|Drama|Romance", "production_year" : 2020, "budget" : 10189 }
+{ "_id" : ObjectId("62275cb2a7a329413cede443"), "id" : 453, "movie_name" : "Death Warrant", "movie_genre" : "Action", "production_year" : 2020, "budget" : 9399 }
+Type "it" for more
+> db.data.find({}).skip(10).limit(5)
+{ "_id" : ObjectId("62275cb2a7a329413cede289"), "id" : 11, "movie_name" : "The Pee-Wee Herman Show on Broadway", "movie_genre" : "Comedy", "production_year" : 2009, "budget" : 16405 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28a"), "id" : 12, "movie_name" : "Eternal Sunshine of the Spotless Mind", "movie_genre" : "Drama|Romance|Sci-Fi", "production_year" : 2007, "budget" : 16277 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28b"), "id" : 13, "movie_name" : "Emmett's Mark", "movie_genre" : "Crime|Drama|Thriller", "production_year" : 2016, "budget" : 15081 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28c"), "id" : 14, "movie_name" : "Lovers, The (Les Amants)", "movie_genre" : "Drama", "production_year" : 1996, "budget" : 16086 }
+{ "_id" : ObjectId("62275cb2a7a329413cede28d"), "id" : 15, "movie_name" : "Cockpit", "movie_genre" : "Comedy", "production_year" : 1990, "budget" : 14473 }
+
+> db.data.updateMany({$and:[{movie_genre:{$exists:true}},{id:{$lte:10}}]},{$unset:{movie_genre:""}})
+{ "acknowledged" : true, "matchedCount" : 10, "modifiedCount" : 10 }
+> db.data.find({id:{$lte:10}})
+{ "_id" : ObjectId("62277bb8336b75920e2e7cbf"), "id" : 1, "movie_name" : "Tracks", "production_year" : 1999, "budget" : 12903 }
+{ "_id" : ObjectId("62277bb8336b75920e2e7cc0"), "id" : 2, "movie_name" : "Ritz, The", "production_year" : 2020, "budget" : 17484 }
+{ "_id" : ObjectId("62277bb8336b75920e2e7cc1"), "id" : 3, "movie_name" : "Chocolat", "production_year" : 1994, "budget" : 12444 }
+{ "_id" : ObjectId("62277bb8336b75920e2e7cc2"), "id" : 4, "movie_name" : "Gnomeo & Juliet", "production_year" : 1992, "budget" : 11504 }
+{ "_id" : ObjectId("62277bb8336b75920e2e7cc3"), "id" : 5, "movie_name" : "World War II: When Lions Roared", "production_year" : 1993, "budget" : 11412 }
+{ "_id" : ObjectId("62277bb8336b75920e2e7cc4"), "id" : 6, "movie_name" : "The Last Wagon", "production_year" : 2000, "budget" : 14374 }
+{ "_id" : ObjectId("62277bb8336b75920e2e7cc5"), "id" : 7, "movie_name" : "Beats Rhymes & Life: The Travels of a Tribe Called Quest", "production_year" : 2001, "budget" : 9925 }
+{ "_id" : ObjectId("62277bb8336b75920e2e7cc6"), "id" : 8, "movie_name" : "Hercules and the Circle of Fire", "production_year" : 2012, "budget" : 19693 }
+{ "_id" : ObjectId("62277bb8336b75920e2e7cc7"), "id" : 9, "movie_name" : "Special Relationship, The", "production_year" : 2018, "budget" : 9025 }
+{ "_id" : ObjectId("62277bb8336b75920e2e7cc8"), "id" : 10, "movie_name" : "Dragon Lord (a.k.a. Dragon Strike) (Long Xiao Ye)", "production_year" : 2002, "budget" : 13638 }
+>
+
+
+
+
+
+

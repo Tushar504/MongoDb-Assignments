@@ -1,0 +1,60 @@
+> use assignment
+switched to db assignment
+> db.createCollection("users")
+{ "ok" : 1 }
+> db.users.insert({"first_name":"Tushar","last_name":"Ahire","email":"user@gmail.com","gender":"Male","ip_address":"12345","age":23})
+WriteResult({ "nInserted" : 1 })
+> db.users.insertMany([{"first_name":"bhavesh","last_name":"bagul","email":"bavesh@gmail.com","gender":"male","ip_adress":"2356","age":"28"},{"first_name":"dipak","last_name":"ahire","email":"dipak@gmail.com","gender":"male","ip_address":"5897","age":"26"},{"first_name":"vijaya","last_name":"jagtap","email":"vij@gmail.com","gender":"female","ip_address":"4769","age":"30"},{"first_name":"chetan","last_name":"pawar","email":"chet@gmail.com","gender":"male","ip_adress":"58745","age":"36"},{"first_name":"nilu","last_name":"ahire","email":"nil@gmail.com","gender":"male","ip_adress":"5","age":"48"},{"first_name":"bhavesh","last_name":"bagul","email":"bavesh@gmail.com","gender":"male","ip_adress":"2356","age":"28"},{"first_name":"dipak","last_name":"ahire","email":"dipak@gmail.com","gender":"male","ip_address":"5897","age":"26"},{"first_name":"vijaya","last_name":"jagtap","email":"vij@gmail.com","gender":"female","ip_address":"4769","age":"30"},{"first_name":"chetan","last_name":"pawar","email":"chet@gmail.com","gender":"male","ip_adress":"58745","age":"36"},{"first_name":"nilu","last_name":"ahire","email":"nil@gmail.com","gender":"male","ip_adress":"5","age":"48"}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("6227115c5929e9d8b3da27dd"),
+                ObjectId("6227115c5929e9d8b3da27de"),
+                ObjectId("6227115c5929e9d8b3da27df"),
+                ObjectId("6227115c5929e9d8b3da27e0"),
+                ObjectId("6227115c5929e9d8b3da27e1"),
+                ObjectId("6227115c5929e9d8b3da27e2"),
+                ObjectId("6227115c5929e9d8b3da27e3"),
+                ObjectId("6227115c5929e9d8b3da27e4"),
+                ObjectId("6227115c5929e9d8b3da27e5"),
+                ObjectId("6227115c5929e9d8b3da27e6")
+        ]
+}
+> db.users.find({})
+{ "_id" : ObjectId("62270d2c5929e9d8b3da27dc"), "first_name" : "Tushar", "last_name" : "Ahire", "email" : "user@gmail.com", "gender" : "Male", "ip_address" : "12345", "age" : 23 }
+{ "_id" : ObjectId("6227115c5929e9d8b3da27dd"), "first_name" : "bhavesh", "last_name" : "bagul", "email" : "bavesh@gmail.com", "gender" : "male", "ip_adress" : "2356", "age" : "28" }
+{ "_id" : ObjectId("6227115c5929e9d8b3da27de"), "first_name" : "dipak", "last_name" : "ahire", "email" : "dipak@gmail.com", "gender" : "male", "ip_address" : "5897", "age" : "26" }
+{ "_id" : ObjectId("6227115c5929e9d8b3da27df"), "first_name" : "vijaya", "last_name" : "jagtap", "email" : "vij@gmail.com", "gender" : "female", "ip_address" : "4769", "age" : "30" }
+{ "_id" : ObjectId("6227115c5929e9d8b3da27e0"), "first_name" : "chetan", "last_name" : "pawar", "email" : "chet@gmail.com", "gender" : "male", "ip_adress" : "58745", "age" : "36" }
+{ "_id" : ObjectId("6227115c5929e9d8b3da27e1"), "first_name" : "nilu", "last_name" : "ahire", "email" : "nil@gmail.com", "gender" : "male", "ip_adress" : "5", "age" : "48" }
+{ "_id" : ObjectId("6227115c5929e9d8b3da27e2"), "first_name" : "bhavesh", "last_name" : "bagul", "email" : "bavesh@gmail.com", "gender" : "male", "ip_adress" : "2356", "age" : "28" }
+{ "_id" : ObjectId("6227115c5929e9d8b3da27e3"), "first_name" : "dipak", "last_name" : "ahire", "email" : "dipak@gmail.com", "gender" : "male", "ip_address" : "5897", "age" : "26" }
+{ "_id" : ObjectId("6227115c5929e9d8b3da27e4"), "first_name" : "vijaya", "last_name" : "jagtap", "email" : "vij@gmail.com", "gender" : "female", "ip_address" : "4769", "age" : "30" }
+{ "_id" : ObjectId("6227115c5929e9d8b3da27e5"), "first_name" : "chetan", "last_name" : "pawar", "email" : "chet@gmail.com", "gender" : "male", "ip_adress" : "58745", "age" : "36" }
+{ "_id" : ObjectId("6227115c5929e9d8b3da27e6"), "first_name" : "nilu", "last_name" : "ahire", "email" : "nil@gmail.com", "gender" : "male", "ip_adress" : "5", "age" : "48" }
+> db.users.findOne({"first_name":"nilu"})
+{
+        "_id" : ObjectId("6227115c5929e9d8b3da27e1"),
+        "first_name" : "nilu",
+        "last_name" : "ahire",
+        "email" : "nil@gmail.com",
+        "gender" : "male",
+        "ip_adress" : "5",
+        "age" : "48"
+}
+> db.users.update({"_id": ObjectId("6227115c5929e9d8b3da27e6")},{$set:{"first_name":"kalu"}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.users.find({"_id":ObjectId("6227115c5929e9d8b3da27e6")})
+{ "_id" : ObjectId("6227115c5929e9d8b3da27e6"), "first_name" : "kalu", "last_name" : "ahire", "email" : "nil@gmail.com", "gender" : "male", "ip_adress" : "5", "age" : "48" }
+> db.users.updateMany({"gender":"male"},{$set:{"eligible":"Yes"}})
+{ "acknowledged" : true, "matchedCount" : 8, "modifiedCount" : 8 }
+> db.users.remove({"age":"36"})
+WriteResult({ "nRemoved" : 2 })
+> db.users.deleteOne({"age":"30"})
+{ "acknowledged" : true, "deletedCount" : 1 }
+> db.users.deleteMany({"gender":"male"})
+{ "acknowledged" : true, "deletedCount" : 6 }
+> db
+assignment
+> db.dropDatabase()
+{ "ok" : 1 }
