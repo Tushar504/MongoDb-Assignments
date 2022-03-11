@@ -1,0 +1,16 @@
+{
+  "name": "mongodb_assignment4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nodemon src/server.js",
+  "scripts": {
+    "server":"nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongoose": "^6.2.5"
+  }
+}
