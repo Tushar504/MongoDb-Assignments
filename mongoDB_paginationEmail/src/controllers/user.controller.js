@@ -12,8 +12,8 @@ router.post("",async(req,res)=>{
         transporter.sendMail({
             from: '"Tushar Ahire" <admin@amazon.com>', // sender address
             to: user.email, // list of receivers
-            subject: "thank you registration", // Subject line
-            text: "Hello sir/madam your account is successfully created", // plain text body
+            subject: `Welcome to ABC system ${user.first_name}` , // Subject line
+            text: `Hi${user.first_name} `, // plain text body
             //   html: "<b>Hello sir/madam your product is successfully created</b>", // html body
             // alternatives: [
             //   {
