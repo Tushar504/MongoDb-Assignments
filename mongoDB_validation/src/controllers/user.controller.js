@@ -39,7 +39,7 @@ body("gender")
 .not()
 .isEmpty()
 .custom((value)=>{
-    if( value == "Male" || value == "Female" || value =="Trans"){
+    if( value == "Male" || value == "Female" || value =="Other" || value == "male" || value == "female" || value =="other"){
       
        return true
     }
